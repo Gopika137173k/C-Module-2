@@ -16,8 +16,33 @@ If i is odd, print its value.
 Increment i to skip the next even number (can also increment by 2 for simplicity).
 
 ## Program
-Add code here
+```
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter an integer n: ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        // Check if i is odd
+        if (i % 2 != 0) {
+            printf("%d ", i);
+        }
+    }
+
+    printf("\n"); 
+    return 0;
+}
+```
 
 ## Output
 
+Sample Output 1:
+Enter an integer n: 6
+1 3 5
+
+Sample Output 2:
+Enter an integer n: 13
+1 3 5 7 9 11 13
+
 ## Result
+program was implemented and executed.
